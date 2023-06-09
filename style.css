@@ -1,0 +1,36 @@
+#grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.square{
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: rgba(240, 70, 19, 0.873);
+}
+
+body{
+    background-color: rgb(52, 154, 163);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+h1{
+    color: rgba(240, 70, 19, 0.873);
+}
+
+button{
+    margin-top: 40px;
+}
+
+.square:nth-child(3n) {
+    border-right: none;
+}
+
+.square:nth-child(6) ~ .square{
+    border-bottom: none;
+}
